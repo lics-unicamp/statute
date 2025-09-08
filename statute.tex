@@ -1,96 +1,250 @@
-\documentclass[11pt, a4paper]{article}
+\documentclass[12pt, a4paper]{article}
 
 \usepackage[utf8]{inputenc}
-\usepackage[portuguese]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
 \usepackage{geometry}
-\usepackage{fancyhdr}
-\usepackage{hyperref}
 \usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{bookmark}
 
-\geometry{a4paper,
-          top=3cm,
-          bottom=2cm,
-          left=3cm,
-          right=2cm}
+% --- CONFIGURAÇÕES DE PÁGINA ---
+\geometry{a4paper, top=3cm, bottom=3cm, left=3cm, right=2cm}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
 
-\title{Estatuto da Liga de Cibersegurança da UNICAMP}
-\author{Diretoria Executiva da Liga de Cibersegurança da UNICAMP}
-\date{Versão de \today}
+\setlength{\headheight}{16pt}
 
+% --- CABEÇALHO E RODAPÉ ---
 \pagestyle{fancy}
-\setlength{\headheight}{14pt}
-\fancyhf{}
-\fancyhead[L]{Estatuto da Liga de Cibersegurança}
-\fancyhead[R]{UNICAMP}
+\fancyhf{} % Limpa todos os campos de cabeçalho e rodapé
+\fancyhead[C]{Estatuto da Liga de Cibersegurança da UNICAMP}
 \fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
 
 \usepackage[scaled]{helvet}
 \renewcommand\familydefault{\sfdefault} 
 \usepackage[T1]{fontenc}
 
+% --- INFORMAÇÕES DO DOCUMENTO ---
+\title{Estatuto da Liga de Cibersegurança da UNICAMP}
+\author{Liga de Cibersegurança da UNICAMP}
+\date{\today} % Data da fundação
+
 \begin{document}
 
 \maketitle
+\thispagestyle{empty}
+\newpage
 
 \tableofcontents
-
 \newpage
 
 % --- CORPO DO ESTATUTO ---
 
-% ARTIGO I - DA DENOMINAÇÃO, SEDE E OBJETIVOS
-\section{Da Denominação, Sede e Objetivos}
-\label{sec:denominacao}
+\section{Capítulo I – Das Disposições Preliminares}
 
-\subsection{Das Disposições Preliminares}
-\label{sec:denominacao-natureza}
-\begin{enumerate}[label=Art. \arabic*.]
-    \item A Liga, fundada em \today, caracteriza-se por não ter fins lucrativos, ter duração ilimitada, ser uma sociedade civil, apartidária, não religiosa e vinculada à UNICAMP;
-    \item A Liga atuará no estudo, pesquisa e extensão, tendo como finalidade o desenvolvimento, a promoção e a difusão de conhecimentos acerca da área de Cibersegurança, contribuindo para a formação acadêmica e profissional dos alunos a ela vinculados;
-    \item Fica a cargo da Liga, através do desenvolvimento de projetos multidisciplinares, promover, facilitar e estimular a integração dos ligantes à área de Cibersegurança;
-    \item A Liga poderá firmar convênios e associações com entidades públicas e privadas para atender suas finalidades e atribuições, assim como estabelecer parcerias.
+
+\subsection{Art. 1º Denominação, Sede e Fins}
+\begin{enumerate}[label=\S \arabic*.]
+    \item A Liga de Cibersegurança da UNICAMP, doravante denominada Liga, fundada em \today, é uma sociedade civil, sem fins lucrativos, de duração ilimitada, apartidária, não religiosa e academicamente vinculada à Faculdade de Tecnologia (FT) da Universidade Estadual de Campinas (UNICAMP).
+    \item A Liga tem sua sede na Faculdade de Tecnologia da UNICAMP, localizada na Rua Paschoal Marmo, nº 1888, Jardim Nova Itália, Limeira, São Paulo, CEP 13484-332.
+\end{enumerate}
+
+\subsection{Art. 2º Do(s) Objetivo(s) e Finalidade(s)}
+\begin{enumerate}[label=\S \arabic*.]
+    \item A Liga atuará no tripé de ensino, pesquisa e extensão, tendo como finalidade o desenvolvimento, a promoção e a difusão de conhecimentos acerca da área de Cibersegurança, contribuindo para a formação acadêmica e profissional dos alunos a ela vinculados.
+    \item São objetivos da Liga:
+    \begin{enumerate}[label=\alph*)]
+        \item Fomentar a pesquisa, o estudo e a divulgação da Cibersegurança no ambiente acadêmico e na comunidade externa;
+        \item Organizar eventos, palestras, workshops, cursos e competições (como CTFs - \textit{Capture The Flag}) para a comunidade acadêmica e demais interessados;
+        \item Promover a integração entre estudantes de diferentes cursos, professores e profissionais da área de Cibersegurança;
+        \item Desenvolver projetos multidisciplinares que estimulem a aplicação prática dos conhecimentos adquiridos;
+        \item Firmar convênios, parcerias e associações com entidades públicas e privadas para atender às suas finalidades e atribuições.
+    \end{enumerate}
 \end{enumerate}
 
 
-\subsection{Sede}
-A sede da Liga se encontra na Faculdade de Tecnologia da UNICAMP, na rua Paschoal Marmo, número 1888, no bairro Jardim Nova Itália, cidade de Limeira, estado de São Paulo.
+\section{Capítulo II – Dos Membros da Liga}
 
-\subsection{Objetivos}
-São objetivos da Liga:
-\begin{enumerate}[label=\alph*)]
-    \item Fomentar a pesquisa, o estudo e a divulgação da Cibersegurança;
-    \item Organizar eventos, palestras e workshops para a comunidade acadêmica;
-    \item Promover a integração entre estudantes e profissionais da área.
-\end{enumerate}
 
-% ARTIGO II - DOS MEMBROS
-\section{Dos Membros}
-\label{sec:membros}
-
-\subsection{Categorias de Membros}
+\subsection{Art. 3º Da Classificação dos Membros}
 A Liga será composta pelas seguintes categorias de membros:
-\begin{enumerate}[label=Art. \arabic*.]
-    \item Membros Diretores;
-    \item Membros Efetivos;
-    \item Membros Honorários.
+\begin{enumerate}[label=\alph*)]
+    \item \textbf{Membros Fundadores:} Aqueles que participaram da ata de fundação da Liga. Gozam dos mesmos direitos e deveres dos Membros Efetivos.
+    \item \textbf{Membros Diretores:} Membros Efetivos eleitos para compor a Diretoria Executiva, com mandato e atribuições definidas neste estatuto.
+    \item \textbf{Membros Efetivos:} Discentes da UNICAMP, de graduação ou pós-graduação, que foram aprovados no processo seletivo da Liga e que cumprem com suas obrigações estatutárias.
+    \item \textbf{Membros Honorários:} Personalidades, professores ou profissionais que tenham prestado relevantes serviços à Liga ou à área de Cibersegurança. A indicação será feita pela Diretoria Executiva e aprovada em Assembleia Geral. Os Membros Honorários não possuem direito a voto nem obrigação de contribuição financeira.
 \end{enumerate}
 
-\subsection{Dos Membros Diretores}
+\subsection{Art. 4º Da Admissão, Direitos e Deveres}
+\begin{enumerate}[label=\S \arabic*.]
+    \item A admissão de Membros Efetivos ocorrerá por meio de processo seletivo, cujos critérios e periodicidade serão definidos e divulgados pela Diretoria Executiva vigente.
+    \item São direitos dos Membros Fundadores e Efetivos:
+    \begin{enumerate}[label=\alph*)]
+        \item Participar de todas as atividades promovidas pela Liga;
+        \item Votar e ser votado para os cargos da Diretoria Executiva, conforme as regras deste estatuto;
+        \item Ter acesso às atas de reunião e relatórios financeiros;
+        \item Propor projetos e atividades à Diretoria Executiva.
+    \end{enumerate}
+    \item São deveres de todos os membros:
+    \begin{enumerate}[label=\alph*)]
+        \item Cumprir e fazer cumprir o presente estatuto;
+        \item Zelar pelo bom nome e patrimônio da Liga;
+        \item Participar ativamente das atividades para as quais se comprometeu;
+        \item Acatar as decisões da Diretoria Executiva e da Assembleia Geral.
+    \end{enumerate}
+\end{enumerate}
 
-\subsection{Dos Membros Efetivos}
+\subsection{Art. 5º Do Desligamento e das Penalidades}
+\begin{enumerate}[label=\S \arabic*.]
+    \item O desligamento de um membro poderá ocorrer a pedido do próprio, por conclusão de curso na UNICAMP, ou por exclusão.
+    \item A exclusão de um membro poderá ser aplicada pela Diretoria Executiva, garantido o direito à ampla defesa, nos seguintes casos:
+    \begin{enumerate}[label=\alph*)]
+        \item Infringir gravemente as normas deste estatuto;
+        \item Praticar atos que desabonem ou prejudiquem a imagem da Liga;
+        \item Deixar de cumprir, sem justificativa, com as obrigações assumidas junto à Liga por período superior a 3 (três) meses.
+    \end{enumerate}
+\end{enumerate}
 
-\subsection{Dos Membros Honorários}
 
-% ARTIGO III - DA ESTRUTURA ORGANIZACIONAL
-\section{Da Estrutura Organizacional}
+\section{Capítulo III – Da Estrutura Organizacional}
 
-\subsection{Da Diretoria}
-A Liga é administrada por uma Diretoria, eleita a cada \dots.
 
-\subsubsection{Do Presidente}
-O Presidente da Diretoria é o responsável por \dots
+A Liga é administrada pelos seguintes órgãos:
+\begin{enumerate}[label=\alph*)]
+    \item Assembleia Geral;
+    \item Diretoria Executiva;
+    \item Comissão Coordenadora (Orientadores);
+    \item Conselho Fiscal.
+\end{enumerate}
 
-\subsubsection{Do Vice-Presidente}
-O Vice-Presidente será responsável por \dots
+\subsection{Art. 6º Da Diretoria Executiva}
+\begin{enumerate}[label=\S \arabic*.]
+    \item A Diretoria Executiva é o órgão de administração da Liga, sendo composta por: Presidente(a), Vice-Presidente(a), Secretário(a) e Tesoureiro(a).
+    \item O mandato da Diretoria Executiva será de 1 (um) ano, permitida uma reeleição para o mesmo cargo.
+    \item Durante os primeiros 24 (vinte e quatro) meses após a fundação da Liga, os Membros Fundadores exercerão os cargos da primeira Diretoria Executiva. Após este período, a composição se dará por eleição direta.
+\end{enumerate}
+
+\subsection{Art. 7º Da Comissão Coordenadora}
+\begin{enumerate}[label=\S \arabic*.]
+    \item A Comissão Coordenadora será composta por, no mínimo, 1 (um) professor da UNICAMP, que atuará como orientador da Liga.
+    \item Compete à Comissão Coordenadora orientar academicamente as atividades da Liga, mediar conflitos e ser o elo institucional com a Universidade.
+\end{enumerate}
+
+\subsection{Art. 8º Do Conselho Fiscal}
+\begin{enumerate}[label=\S \arabic*.]
+    \item O Conselho Fiscal será composto por 3 (três) Membros Efetivos não pertencentes à Diretoria Executiva, eleitos juntamente com esta.
+    \item Compete ao Conselho Fiscal examinar os balancetes e relatórios financeiros da Liga, emitindo parecer à Assembleia Geral.
+\end{enumerate}
+
+
+\section{Capítulo IV – Das Atribuições da Diretoria}
+
+
+\subsection{Art. 9º Do Presidente(a)}
+Compete ao Presidente(a):
+\begin{enumerate}[label=\alph*)]
+    \item Representar a Liga judicial e extrajudicialmente;
+    \item Convocar e presidir as reuniões da Diretoria Executiva e da Assembleia Geral;
+    \item Assinar, em conjunto com o(a) Tesoureiro(a), os documentos financeiros;
+    \item Exercer o voto de minerva em caso de empate nas votações da Diretoria;
+    \item Coordenar as atividades gerais da Liga.
+\end{enumerate}
+
+\subsection{Art. 10º Do Vice-Presidente(a)}
+Compete ao Vice-Presidente(a):
+\begin{enumerate}[label=\alph*)]
+    \item Substituir o(a) Presidente(a) em suas ausências e impedimentos;
+    \item Auxiliar o(a) Presidente(a) em suas atribuições;
+    \item Assumir a Presidência em caso de vacância, até o final do mandato.
+\end{enumerate}
+
+\subsection{Art. 11º Do(a) Secretário(a)}
+Compete ao(à) Secretário(a):
+\begin{enumerate}[label=\alph*)]
+    \item Redigir e manter em dia as atas das reuniões;
+    \item Gerenciar os arquivos, documentos e correspondências da Liga;
+    \item Manter atualizada a lista de membros.
+\end{enumerate}
+
+\subsection{Art. 12º Do(a) Tesoureiro(a)}
+Compete ao(à) Tesoureiro(a):
+\begin{enumerate}[label=\alph*)]
+    \item Administrar as finanças e o patrimônio da Liga;
+    \item Manter em dia a contabilidade e os registros financeiros;
+    \item Elaborar relatórios financeiros periódicos e um balanço anual;
+    \item Assinar, em conjunto com o(a) Presidente(a), os documentos financeiros.
+\end{enumerate}
+
+
+\section{Capítulo V – Do Patrimônio e das Finanças}
+
+
+\subsection{Art. 13º Da Receita}
+Constituem a receita da Liga:
+\begin{enumerate}[label=\alph*)]
+    \item Doações, legados e auxílios de pessoas físicas ou jurídicas, públicas ou privadas;
+    \item Contribuições de seus membros, se instituídas pela Assembleia Geral;
+    \item Rendas provenientes de eventos, cursos ou projetos;
+    \item Verbas obtidas através de convênios e parcerias.
+\end{enumerate}
+
+\subsection{Art. 14º Da Despesa}
+As despesas da Liga deverão se restringir àquelas necessárias para a consecução de seus objetivos, como aquisição de materiais, organização de eventos, e outros custos administrativos, devidamente aprovadas pela Diretoria Executiva.
+
+
+\section{Capítulo VI – Das Eleições}
+
+
+\subsection{Art. 15º Do Processo Eleitoral}
+\begin{enumerate}[label=\S \arabic*.]
+    \item As eleições para a Diretoria Executiva e Conselho Fiscal ocorrerão anualmente, em data a ser definida pela Assembleia Geral.
+    \item A convocação para as eleições será feita com antecedência mínima de 30 (trinta) dias.
+    \item O processo eleitoral será conduzido por uma comissão eleitoral composta por 3 (três) membros efetivos não candidatos.
+    \item A votação será secreta e direta, sendo eleita a chapa que obtiver a maioria simples dos votos dos membros presentes e votantes.
+\end{enumerate}
+
+\subsection{Art. 16º Da Posse}
+A posse dos eleitos ocorrerá na primeira reunião ordinária após a proclamação dos resultados da eleição.
+
+
+\section{Capítulo VII – Das Reuniões}
+
+
+\subsection{Art. 17º Da Assembleia Geral}
+\begin{enumerate}[label=\S \arabic*.]
+    \item A Assembleia Geral é o órgão soberano da Liga, composta por todos os membros com direito a voto.
+    \item Haverá, no mínimo, uma Assembleia Geral Ordinária por ano para aprovação de contas e eleição da nova diretoria.
+    \item Assembleias Gerais Extraordinárias poderão ser convocadas pelo Presidente(a) ou por requerimento de 1/3 (um terço) dos membros efetivos.
+\end{enumerate}
+
+\subsection{Art. 18º Das Reuniões da Diretoria}
+A Diretoria Executiva se reunirá ordinariamente uma vez por mês, e extraordinariamente sempre que necessário, por convocação do Presidente(a) ou da maioria de seus membros.
+
+
+\section{Capítulo VIII – Das Disposições Gerais e Finais}
+
+
+\subsection{Art. 19º Da Reforma do Estatuto}
+O presente estatuto só poderá ser reformado em Assembleia Geral Extraordinária, convocada especificamente para este fim, com a aprovação de, no mínimo, 2/3 (dois terços) dos membros presentes.
+
+\subsection{Art. 20º Da Dissolução da Liga}
+A dissolução da Liga somente ocorrerá por decisão de uma Assembleia Geral Extraordinária, com aprovação de 2/3 (dois terços) de todos os membros efetivos. Em caso de dissolução, o patrimônio remanescente será destinado a uma entidade congênere ou à Faculdade de Tecnologia da UNICAMP.
+
+\subsection{Art. 21º Dos Casos Omissos}
+Os casos omissos neste estatuto serão resolvidos pela Diretoria Executiva, com posterior referendo da Assembleia Geral.
+
+\bigskip
+\bigskip
+\begin{center}
+    Limeira, \today.
+\end{center}
 
 \end{document}
